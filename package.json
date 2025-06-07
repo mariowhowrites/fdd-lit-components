@@ -1,7 +1,7 @@
 {
   "name": "@fourthdoordigital/lit-components",
   "private": false,
-  "version": "0.0.3",
+  "version": "0.0.5",
   "description": "A simple web component",
   "main": "dist/psychopomp-dance.umd.js",
   "module": "dist/psychopomp-dance.js",
@@ -17,7 +17,7 @@
     "psychopomp-dance.d.ts"
   ],
   "scripts": {
-    "build": "tsc",
+    "build": "tsc && rollup -c",
     "build:watch": "tsc --watch",
     "clean": "rimraf psychopomp-dance.{d.ts,d.ts.map,js,js.map} test/psychopomp-dance.{d.ts,d.ts.map,js,js.map} test/psychopomp-dance_test.{d.ts,d.ts.map,js,js.map}",
     "lint": "npm run lint:lit-analyzer && npm run lint:eslint",
