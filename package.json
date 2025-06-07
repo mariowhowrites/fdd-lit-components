@@ -51,6 +51,7 @@
   "author": "Google LLC",
   "license": "BSD-3-Clause",
   "dependencies": {
+    "gsap": "^3.13.0",
     "lit": "^3.2.0"
   },
   "devDependencies": {
