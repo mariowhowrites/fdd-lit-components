@@ -1,11 +1,21 @@
 {
   "name": "@fourthdoordigital/lit-components",
   "private": false,
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "A simple web component",
-  "main": "psychopomp-dance.js",
-  "module": "psychopomp-dance.js",
+  "main": "dist/psychopomp-dance.umd.js",
+  "module": "dist/psychopomp-dance.js",
   "type": "module",
+  "exports": {
+    ".": {
+      "import": "./dist/psychopomp-dance.js",
+      "require": "./dist/psychopomp-dance.umd.js"
+    }
+  },
+  "files": [
+    "dist",
+    "psychopomp-dance.d.ts"
+  ],
   "scripts": {
     "build": "tsc",
     "build:watch": "tsc --watch",
